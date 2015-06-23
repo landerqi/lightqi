@@ -7,7 +7,7 @@ For clarity, I leave all my settings unchanged. So you are suggested to modify t
 
 ## Install
 
-Execute the following command and modify `theme` in `_config.yml` to `lightum`.
+Execute the following command and modify `theme` in `_config.yml` to `lightqi`.
 
 ```
 git clone https://github.com/landerqi/lightqi.git themes/lightqi
