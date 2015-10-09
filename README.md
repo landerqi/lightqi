@@ -25,6 +25,6 @@ git pull
 
 ## Customization
 - 非常感谢[zippera](http://zipperary.com/2013/05/28/hexo-guide-1/)关于hexo的介绍
-- **About**: [FYI](http://zipperary.com/2013/05/30/hexo-guide-4/). Edit this file to add your information. 
+- **About**: Edit this file to add your information. 
 - **Intro**: Go to `layout/_widget/intro.ejs` and add your information.
 - **Fork me on Github**: Go to `layout/layout.ejs` and change the Github username to yours.
