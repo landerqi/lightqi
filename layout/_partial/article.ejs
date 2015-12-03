@@ -43,4 +43,14 @@
   </div>
 </article>
 
+<% if (!index &&theme.toc){ %>
+<script>
+  var tocEx = function(el){
+    var toc = document.querySelector(el), content = toc.innerHTML;
+    content = content.replace('<!-- toc -->', '<div class="toc"><b>文章目录</b>').replace('<!-- tocstop -->', '</div>');
+    toc.innerHTML = content;
+  }('.entry');
+</script>
+<% } %>
+
 <%- partial('comment') %>
