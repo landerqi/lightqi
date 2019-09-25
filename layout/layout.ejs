@@ -1,7 +1,7 @@
 <%- partial('_partial/head') %>
 
 <body>
-  <div id="bg" class="bg-fixed" data-prefix="http://landerqi.lefzs.com/bg-" data-ext=".jpg">
+  <div id="bg" class="bg-fixed" data-prefix="https://bookstorage.bs2dl.yy.com/" data-ext=".jpg">
   </div>
   <header id="header" class="inner"><%- partial('_partial/header') %></header>
   <div id="content" class="inner">
@@ -14,12 +14,13 @@
 </body>
 <script>
   var tocEx = function(el){
+    var imgNameArray = ['26218_1569385509547936555', '26218_1569385571948012698', '26218_1569385588416891393', '26218_1569385624870002563', '26218_1569385644100191591', '26218_1569385674244674777', '26218_1569385689852633253', '26218_1569385707148100060', '26218_1569385724292974086', '26218_1569385995556145672']
     var bg = document.getElementById(el);
     var dataPrefix = bg.attributes["data-prefix"].value;
     var dataExt = bg.attributes["data-ext"].value;
-    var randomNumber = Math.floor(Math.random()*20) + 1;
+    var randomNumber = Math.floor(Math.random()*9) + 1;
 
-    var bgUrl = dataPrefix + randomNumber + dataExt;
+    var bgUrl = dataPrefix + imgNameArray[randomNumber] + dataExt;
 
     bg.style.backgroundImage='url('+ bgUrl +')';
 
